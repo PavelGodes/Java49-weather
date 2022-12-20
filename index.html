@@ -7,7 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="date" min="2022-12-19" max="2023-01-03">
+    <input type="date" id="date_from" name="dateFrom" min="2022-12-19" max="2023-01-03" required>
+    <input type="date" id="date_to" name="dateTo" min="2022-12-19" max="2023-01-03" required>
+
+   // <input type="number" name="hourFrom" id="hour_from"  required>
+   // <input type="number" name="hourTo" id="hour_to"required>
+    <input type="time" id="appt" name="hourFrom"
+       min="09:00" max="18:00" required>
+    
+    <select name="City" required>
+        <option value hidden selected disabled>
+            --Select City--
+        </option>
+        <option value="Rehovot">Rehovot</option>
+        <option value="Haifa">Haifa</option>
+        <option value="Jerusalem">Jerusalem</option>
+        <option value="Eilat">Eilat</option>
+        <option value="Tel-Aviv">Tel-Aviv</option>
+    </select>
     <script src="src/main.js" type="module"></script>
 </body>
 </html>
